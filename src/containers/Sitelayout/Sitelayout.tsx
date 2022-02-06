@@ -1,4 +1,5 @@
 import React from 'react';
+import RouteLists from '../../routes/RouteLists';
 
 //COMPONENTS
 
@@ -9,6 +10,7 @@ const SiteLayout = () => {
     return (
         <div>
             sitelayout
+            <RouteLists />
         </div>
     );
 }

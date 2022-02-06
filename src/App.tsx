@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
+import { HashRouter as Router } from "react-router-dom";
 
 // COMPONENTS
 import SiteLayout from './containers/Sitelayout/Sitelayout';
@@ -10,7 +11,9 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <SiteLayout></SiteLayout>
+      <Router>
+        <SiteLayout></SiteLayout>
+      </Router>
     </div>
   );
 }
