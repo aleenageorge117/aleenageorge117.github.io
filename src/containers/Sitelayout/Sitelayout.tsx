@@ -9,7 +9,6 @@ import "./Sitelayout.scss";
 const SiteLayout = () => {
     return (
         <div>
-            sitelayout
             <RouteLists />
         </div>
     );
