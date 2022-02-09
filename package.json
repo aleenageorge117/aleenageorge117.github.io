@@ -22,10 +22,12 @@
   "scripts": {
     "start": "env-cmd -f .env react-scripts start",
     "start:prod": "env-cmd -f .env.stage react-scripts start",
+    "start:github-pages": "env-cmd -f .env.github-pages react-scripts start",
     "start:webpage-uncc": "env-cmd -f .env.webpages-uncc react-scripts start",
 
     "build": "env-cmd -f .env react-scripts build",
     "build:prod": "env-cmd -f .env.stage react-scripts build",
+    "build:github-pages": "env-cmd -f .env.github-pages react-scripts build",
     "build:webpage-uncc": "env-cmd -f .env.webpages-uncc react-scripts build",
 
     "test": "react-scripts test",
