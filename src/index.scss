@@ -1,2 +1,21 @@
 @import "./assets/bootstrap-3.4.1-dist/css/bootstrap.css";
 @import "./assets/bootstrap-3.4.1-dist/css/bootstrap-theme.css";
+
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#root {
+    // position: relative;
+}
+canvas{
+    background-color: #000;
+    z-index: 0.9;
+    position: absolute;
+    width: 100%;
+}

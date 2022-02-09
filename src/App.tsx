@@ -6,7 +6,7 @@ import { HashRouter as Router } from "react-router-dom";
 import SiteLayout from './containers/Sitelayout/Sitelayout';
 
 // SCSS
-import './App.css';
+import './App.scss';
 
 function App() {
   return (

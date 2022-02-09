@@ -1,9 +1,13 @@
-.homeContainer {
+@import "../../style-variables.scss";
 
+.homeContainer {
+    padding: 90px 45px;
+    top: 30px;
+    
     .profilePhoto {
         height: 200px;
         width: 200px;
-        border: 4px solid white;
+        border: 4px solid $white;
         border-radius: 100px;
         // background-image: url();
         position: relative;
@@ -14,7 +18,6 @@
     .innerCircle {
         height: 180px;
         width: 180px;
-        border: 1px solid white;
         border-radius: 100px;
         left: 6px;
         top: 6px;
@@ -23,12 +26,16 @@
     }
 
     .descriptionContainer {
+        position: relative;
         display: grid;
         width: fit-content;
         margin: 0px auto;
 
         .name {
             font-size: 54px;
+            font-family: "TT Ramillas",serif;
+            color: $salmonPink;
+            text-align: center;
         }
     
         .designation {
@@ -42,18 +49,21 @@
             float: left;
             display: flex;
         }
-    }
 
-    .socialMediaContainer {
-        img {
-            height: 28px;
-            margin: 5px;
-            cursor: pointer;   
-            
-            &:hover {
-                border: 1px solid white;
-                border-radius: 10px;
+        .socialMediaContainer {
+            display: flex;
+
+            img {
+                height: 28px;
+                margin: 5px 10px 0px 0px;
+                cursor: pointer;   
+                
+                &:hover {
+                    border: 2px solid $salmonPink;
+                    border-radius: 10px;
+                }
             }
         }
+    
     }
 }

@@ -1,0 +1,28 @@
+@import "../../style-variables.scss";
+
+.navContainer {
+    position: relative;
+    display: flex;
+    float: right;
+    margin: 25px 35px;
+
+
+    .navList {
+        display: grid;
+        margin-left: 25px;
+        border-bottom: 6px solid transparent;
+        transition: border-bottom 2s;
+    
+        &:hover {
+            border-bottom: 3px solid $salmonPink;
+        }
+    }
+    
+    .navText {
+        font-size: 18px;
+
+        &:hover {
+            color: $salmonPink;
+        }
+    }
+}
