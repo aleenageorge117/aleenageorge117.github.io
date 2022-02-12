@@ -2,13 +2,17 @@ import React from 'react';
 import RouteLists from '../../routes/RouteLists';
 
 //COMPONENTS
+import NavSidePanel from '../../components/NavSidePanel/NavSidePanel';
 
 // SCSS
 import "./Sitelayout.scss";
 
 const SiteLayout = () => {
     return (
-        <RouteLists />
+        <div>
+            <NavSidePanel />
+            <RouteLists />
+        </div>
     );
 }
 

@@ -2,18 +2,23 @@
 @import 'style-variables.scss';
 
 body {
-    color: $white;
+    color: $white !important;
     height: 100vh;
     background-color: $black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Roboto Mono", monospace;
 }
 
 a {
-    color: inherit;
+    color: white !important;
     text-decoration: none !important;
 
-    &:hover{
-        text-decoration: none;
-        color: inherit; 
+    &:hover,:focus {
+        text-decoration: none !important;
+        color: inherit !important; 
     }
+}
+
+.highlightTxt {
+    color: $salmonPink;
+    font-weight: 600;
 }
