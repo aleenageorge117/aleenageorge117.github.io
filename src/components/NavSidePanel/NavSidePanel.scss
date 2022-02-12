@@ -12,7 +12,8 @@
         margin-left: 25px;
         border-bottom: 6px solid transparent;
         transition: border-bottom 2s;
-    
+        color: white;
+        
         &:hover {
             border-bottom: 3px solid $salmonPink;
         }

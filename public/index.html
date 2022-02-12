@@ -36,6 +36,47 @@
     <div id="root"></div>
 
     <script src="%PUBLIC_URL%/particleAnimation.js"></script>
+    <script >
+      
+      var url = '/admin/v1/search/?search=' + searchQuery;
+      doAjaxCall(url, '', 'GET', function (responseData) {
+        console.log(responseData)
+
+      }, function (error) {
+          console.error("error---->")
+          console.log(error)
+
+      });
+
+      var currentRequest = null;
+
+      function doAjaxCall(path, data, method, callback, callback_error)
+      {
+          if(currentRequest != null){
+          currentRequest.abort();
+        }
+
+        currentRequest = $.ajax({
+          url: path,
+          data: data,
+          type: method,
+          contentType: 'application/json',
+          
+          beforeSend: function() {
+
+          },
+          complete: function() {
+          },
+          error: function(error) {
+            callback_error(error);
+          },
+          success: function(data) {
+            callback(data);
+          }
+        });
+      }
+
+    </script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

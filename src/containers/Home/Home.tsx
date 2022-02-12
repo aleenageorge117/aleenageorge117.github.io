@@ -1,8 +1,5 @@
 import React from 'react';
 
-//COMPONENTS
-import NavSidePanel from '../../components/NavSidePanel/NavSidePanel';
-
 // SCSS
 import "./Home.scss";
 
@@ -36,30 +33,32 @@ const Home = () => {
     ];
     
     return (
-        <div>
-            <NavSidePanel />
-            <div className='homeContainer'>
-                <div className='profilePhoto'>
-                    <img className='innerCircle' src={profileImage} alt='Aleena Jimmy George' />
-                </div>
-                <div className='descriptionContainer'>
-                    <span className='name'>Aleena Jimmy George</span>
-                    <span className='designation'>MS in CS Graduate Student at UNC Charlotte | Software Developer</span>
-                    <span className='location'>Charlotte, NC</span>
 
-                    <div className='socialMediaContainer'>
-                        {
-                            socialMediaList.map((sm: any, key: Number) => {
-                                return (
-                                    <img src={sm.svg} onClick={() => window.open(sm.Link)}/>
-                                )
-                            })
-                        }
-                    </div>
+        <div className='homeContainer'>
+            <div className='profilePhoto'>
+                <img className='innerCircle' src={profileImage} alt='Aleena Jimmy George' />
+            </div>
+            <div className='descriptionContainer'>
+                <h2 className='name'>aleena jimmy george</h2>
+                <div className='designation'>MS in CS Graduate Student at UNC Charlotte&nbsp;|&nbsp;
+                    <span className='highlightTxt'>Software Developer</span>
+                </div>
+                <span className='location'>Charlotte, NC</span>
+                <div className='bio'>Hi there! I am a
+                    <span className='highlightTxt'> Web Development </span>
+                    enthusiast trying my hand at new things and getting better as I go.</div>
+                <div className='socialMediaContainer'>
+                    {
+                        socialMediaList.map((sm: any, key: Number) => {
+                            return (
+                                <img src={sm.svg} onClick={() => window.open(sm.Link)}/>
+                            )
+                        })
+                    }
                 </div>
             </div>
-
         </div>
+
     );
 }
 
