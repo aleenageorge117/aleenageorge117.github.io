@@ -226,9 +226,11 @@ function initBalls(num){
     }
 }
 // Init Canvas
+let scrollHeight = document.documentElement.scrollHeight;
+console.log(scrollHeight)
 function initCanvas(){
     canvas.setAttribute('width', window.innerWidth);
-    canvas.setAttribute('height', window.innerHeight);
+    canvas.setAttribute('height', scrollHeight);
     
     can_w = parseInt(canvas.getAttribute('width'));
     can_h = parseInt(canvas.getAttribute('height'));

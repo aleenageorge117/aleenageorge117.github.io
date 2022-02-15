@@ -10,9 +10,11 @@
     "@types/node": "^16.11.22",
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.11",
+    "@types/react-pdf": "^5.0.9",
     "env-cmd": "^10.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-pdf": "^5.7.1",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
     "sass": "^1.49.7",
@@ -23,11 +25,9 @@
     "start": "env-cmd -f .env react-scripts start",
     "start:prod": "env-cmd -f .env.stage react-scripts start",
     "start:webpage-uncc": "env-cmd -f .env.webpages-uncc react-scripts start",
-
     "build": "env-cmd -f .env react-scripts build",
     "build:prod": "env-cmd -f .env.stage react-scripts build",
     "build:webpage-uncc": "env-cmd -f .env.webpages-uncc react-scripts build",
-
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
