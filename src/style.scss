@@ -26,3 +26,25 @@ a {
     color: $salmonPink;
     font-weight: 600;
 }
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ SCROLLBAR @@@@@@@@@@@@@@@@@@@@@@@@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: $black; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $black; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $black; 
+}

@@ -226,7 +226,7 @@ function initBalls(num){
     }
 }
 // Init Canvas
-let scrollHeight = document.documentElement.scrollHeight;
+let scrollHeight = window.innerHeight;
 console.log(scrollHeight)
 function initCanvas(){
     canvas.setAttribute('width', window.innerWidth);
@@ -237,6 +237,12 @@ function initCanvas(){
 }
 window.addEventListener('resize', function(e){
     initCanvas();
+});
+
+window.addEventListener('scroll', function(e){
+    scrollHeight += document.documentElement.scrollHeight 
+    initCanvas();
+    
 });
 
 function goMovie(){

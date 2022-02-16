@@ -1,13 +1,10 @@
 import React from 'react';
-
-// import Resume from '../../assets/RESUME.pdf';
+import { Document, Page } from 'react-pdf';
 
 const Resume = () => {
     
     return (
-        <div>
-            {/* <Document file={require('../../assets/RESUME.pdf')}></Document> */}
-        </div>
+        <Document file='https://pdfjs-express.s3-us-west-2.amazonaws.com/docs/choosing-a-pdf-viewer.pdf' />
     );
 }
 
