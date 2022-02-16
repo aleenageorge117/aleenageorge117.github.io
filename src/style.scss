@@ -30,7 +30,7 @@ a {
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ SCROLLBAR @@@@@@@@@@@@@@@@@@@@@@@@
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
     height: 8px;
 }
 
@@ -41,7 +41,8 @@ a {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: $black; 
+    background: $salmonPink; 
+    border-radius: 4px;
 }
 
 /* Handle on hover */
