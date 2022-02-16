@@ -226,15 +226,23 @@ function initBalls(num){
     }
 }
 // Init Canvas
+let scrollHeight = window.innerHeight;
+console.log(scrollHeight)
 function initCanvas(){
     canvas.setAttribute('width', window.innerWidth);
-    canvas.setAttribute('height', window.innerHeight);
+    canvas.setAttribute('height', scrollHeight);
     
     can_w = parseInt(canvas.getAttribute('width'));
     can_h = parseInt(canvas.getAttribute('height'));
 }
 window.addEventListener('resize', function(e){
     initCanvas();
+});
+
+window.addEventListener('scroll', function(e){
+    scrollHeight += document.documentElement.scrollHeight 
+    initCanvas();
+    
 });
 
 function goMovie(){
