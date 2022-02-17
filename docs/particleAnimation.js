@@ -226,24 +226,40 @@ function initBalls(num){
     }
 }
 // Init Canvas
-let scrollHeight = window.innerHeight;
-console.log(scrollHeight)
+let docHeight = window.innerHeight;
+
 function initCanvas(){
     canvas.setAttribute('width', window.innerWidth);
-    canvas.setAttribute('height', scrollHeight);
+    canvas.setAttribute('height', docHeight);
     
     can_w = parseInt(canvas.getAttribute('width'));
     can_h = parseInt(canvas.getAttribute('height'));
 }
+
 window.addEventListener('resize', function(e){
     initCanvas();
 });
 
 window.addEventListener('scroll', function(e){
-    scrollHeight += document.documentElement.scrollHeight 
+    docHeight = document.documentElement.scrollHeight;
     initCanvas();
-    
 });
+
+
+let lastUrl = location.href; 
+new MutationObserver(() => {
+  const url = location.href;
+  if (url !== lastUrl) {
+    lastUrl = url;
+    onUrlChange();
+  }
+}).observe(document, {subtree: true, childList: true});
+ 
+ 
+function onUrlChange() {
+    docHeight = window.innerHeight;
+    initCanvas();
+}
 
 function goMovie(){
     initCanvas();
@@ -272,18 +288,3 @@ canvas.addEventListener('mousemove', function(e){
     mouse_ball.x = e.pageX;
     mouse_ball.y = e.pageY;
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
