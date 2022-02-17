@@ -53,7 +53,7 @@ const Work = () => {
     
     return (
         <div className='col-lg-12 col-md-12 col-sm-12 row'>
-            <div className='wor,mkkContainer'>
+            <div className='workContainer'>
                 {
                     workExp.map((work: any, key: Number) => {
                         return (
