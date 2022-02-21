@@ -1,6 +1,8 @@
 import React from 'react';
+import { Document } from 'react-pdf';
 
 //COMPONENTS
+import ViewResume from '../../components/ViewResume/ViewResume';
 
 // SCSS
 import "./Work.scss";
@@ -25,17 +27,8 @@ const Work = () => {
             "description" : [
                                 "Developed an Analytics portal and CIO Dashboard to obtain Product Engagement and User Activity Insights",
                                 "Debugged, performed root cause analysis for software problems, and provided optimised workable solutions", 
-                                "Collaborated on planning and development of a component-based Content Management System for developer and software documentation"
-                            ]
-        },
-        {
-            "company" : "EdCast",
-            "title" : "Trainee Software Engineer",
-            "timePeriod" : "Jun 2019 - Jan 2020",
-            "description" : [
                                 "Integrated interactive chart libraries to assist with Visualization and Interpretation of Data", 
-                                "Participated in Agile feature developments while supporting existing ones", 
-                                "Designed and developed Email templates"
+                                "Collaborated on planning and development of a component-based Content Management System for developer and software documentation"
                             ]
         },
         {
@@ -52,8 +45,11 @@ const Work = () => {
     ]
     
     return (
-        <div className='col-lg-12 col-md-12 col-sm-12 row'>
-            <div className='workContainer'>
+        <div className='col-lg-12 col-md-12 col-sm-12 workContainer'>
+            <div className='col-lg-12 col-md-12 col-sm-12'>
+                <ViewResume />
+            </div>
+            <div className='workSection'>
                 {
                     workExp.map((work: any, key: Number) => {
                         return (
