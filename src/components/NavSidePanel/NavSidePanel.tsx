@@ -18,15 +18,7 @@ const NavSidePanel = () => {
         {
             "title": "Work",
             "route": "/work"
-        },
-        {
-            "title": "Interests",
-            "route": "/interests"
-        },
-        {
-            "title": "Resume",
-            "route": "/resume"
-        },
+        }
     ];
 
     

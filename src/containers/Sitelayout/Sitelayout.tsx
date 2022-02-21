@@ -3,6 +3,7 @@ import RouteLists from '../../routes/RouteLists';
 
 //COMPONENTS
 import NavSidePanel from '../../components/NavSidePanel/NavSidePanel';
+import Footer from '../../components/Footer/Footer';
 
 // SCSS
 import "./Sitelayout.scss";
@@ -12,6 +13,7 @@ const SiteLayout = () => {
         <div>
             <NavSidePanel />
             <RouteLists />
+            <Footer />
         </div>
     );
 }
