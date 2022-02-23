@@ -2,14 +2,15 @@
 
 .navContainer {
     position: relative;
-    display: flex;
     float: right;
-    margin: 25px 35px;
+    margin: 25px 0px;
+    display: block;
+    text-align: end;
 
 
     .navList {
-        display: grid;
-        margin-left: 25px;
+        display: inline-block;
+        margin: 0 20px;
         border-bottom: 6px solid transparent;
         transition: border-bottom 2s;
         color: white;

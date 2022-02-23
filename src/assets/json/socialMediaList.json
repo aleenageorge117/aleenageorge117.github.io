@@ -1,0 +1,20 @@
+{
+    "list" : [
+        {
+            "svg": "linkedin.svg",
+            "Link": "https://www.linkedin.com/in/aleena-jimmy-george/"
+        },
+        {
+            "svg": "github.svg",
+            "Link": "https://github.com/aleenageorge117"
+        },
+        {
+            "svg": "gmail.svg",
+            "Link": "mailto:aleenajimmygeorge117@gmail.com"
+        },
+        {
+            "svg": "instagram.svg",
+            "Link": "https://www.instagram.com/annaaleena/"
+        }
+    ]
+}

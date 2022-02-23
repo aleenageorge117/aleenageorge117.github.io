@@ -1,8 +1,9 @@
 @import "../../style-variables.scss";
 
 .homeContainer {
-    padding: 90px 45px;
-    top: 30px;
+    padding: 30px 45px;
+    top: 80px;
+    display: flow-root;
 
     .profilePhoto {
         height: 200px;
@@ -61,10 +62,11 @@
             display: flex;
             margin-top: 10px;
             
-            img {
+            svg {
                 height: 28px;
                 margin: 5px 10px 0px 0px;
-                cursor: pointer;   
+                cursor: pointer;
+                width: auto;  
                 
                 &:hover {
                     border: 2px solid $salmonPink;
