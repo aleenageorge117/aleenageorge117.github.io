@@ -1,0 +1,16 @@
+{
+    "lists" : [
+        {
+            "title": "Home",
+            "route": "/home"
+        },
+        {
+            "title": "Work",
+            "route": "/work"
+        },
+        {
+            "title": "Contact",
+            "route": "/contact"
+        }
+    ]
+}

@@ -1,36 +1,17 @@
 import React from 'react';
+import SVG from "react-inlinesvg";
 
 // SCSS
 import "./Home.scss";
 
 //IMAGE | SVG
 import profileImage from '../../assets/images/profileImage.jpeg';
-import HamburgerMenu from '../../assets/images/hamburgerMenu-icon.png';
-import LinkedInSVG from '../../assets/svg/linkedin.svg';
-import InstagramSVG from '../../assets/svg/instagram.svg';
-import GmailSVG from '../../assets/svg/gmail.svg';
-import GitHubSVG from '../../assets/svg/github.svg';
+
+//JSON
+import socialMediaList from '../../assets/json/socialMediaList.json'
 
 const Home = () => {
 
-    let socialMediaList = [
-        {
-            "svg": LinkedInSVG,
-            "Link": "https://www.linkedin.com/in/aleena-jimmy-george/"
-        },
-        {
-            "svg": GitHubSVG,
-            "Link": "https://github.com/aleenageorge117"
-        },
-        {
-            "svg": GmailSVG,
-            "Link": "mailto:aleenajimmygeorge117@gmail.com"
-        },
-        {
-            "svg": InstagramSVG,
-            "Link": "https://www.instagram.com/annaaleena/"
-        },
-    ];
     
     return (
 
@@ -49,9 +30,9 @@ const Home = () => {
                     enthusiast trying my hand at new things and getting better as I go.</div>
                 <div className='socialMediaContainer'>
                     {
-                        socialMediaList.map((sm: any, key: Number) => {
+                        socialMediaList.list.map((sm: any, key: Number) => {
                             return (
-                                <img src={sm.svg} onClick={() => window.open(sm.Link)}/>
+                                <SVG src={require(`../../assets/svg/${sm.svg}`)} onClick={() => window.open(sm.Link)}/>
                             )
                         })
                     }

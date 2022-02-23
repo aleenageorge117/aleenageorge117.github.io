@@ -9,24 +9,17 @@ import "./NavSidePanel.scss";
 import HamburgerMenu from '../../assets/images/hamburgerMenu-icon.png';
 import { Link } from 'react-router-dom';
 
+//JSON
+import navigationLists from '../../assets/json/navigationLists.json'
+
 const NavSidePanel = () => {
-    let navigationLists = [
-        {
-            "title": "Home",
-            "route": "/home"
-        },
-        {
-            "title": "Work",
-            "route": "/work"
-        }
-    ];
 
     
     return (
-        <div className='navContainer'>
+        <div className='navContainer col-lg-12 col-md-12 col-sm-12 col-xs-12'>
             {/* <img className='hamburgerIcon' src={HamburgerMenu} alt='hamburgerMenu' /> */}
             {
-                navigationLists.map((navItem:any, key: Number) => {
+                navigationLists.lists.map((navItem:any, key: Number) => {
                     return (
                         <div className='navList'>
 

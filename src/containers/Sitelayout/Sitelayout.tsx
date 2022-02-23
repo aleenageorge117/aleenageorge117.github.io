@@ -13,7 +13,7 @@ const SiteLayout = () => {
         <div>
             <NavSidePanel />
             <RouteLists />
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 }
