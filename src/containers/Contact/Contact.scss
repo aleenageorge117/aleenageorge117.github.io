@@ -7,11 +7,14 @@
 
     .formSection{
         border: 1px solid $salmonPink;
-        height: 300px;
         border-radius: 4px;
         padding: 30px;
         width: 60%;
         margin: 0 auto;
         background-color: rgba(49, 48, 48, 0.673);
+    }
+
+    .requiredStar {
+        color: $errorRed;
     }
 }

@@ -18,6 +18,18 @@ a {
     }
 }
 
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    height: 40px;
+    color: $black;
+}
+
+textarea {
+    height: 200px;
+}
+
 .row {
     margin: 0px !important;
 }
