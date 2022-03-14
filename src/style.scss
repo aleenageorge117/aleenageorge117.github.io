@@ -1,74 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
-@import 'style-variables.scss';
+@import "../../style-variables.scss";
 
-body {
-    color: $white !important;
-    height: 100vh;
-    background-color: $black;
-    font-family: "Roboto Mono", monospace;
-}
+.contactContainer {
+    padding: 30px 45px;
+    top: 60px;
+    display: flow-root;
 
-a {
-    color: white !important;
-    text-decoration: none !important;
-
-    &:hover,:focus {
-        text-decoration: none !important;
-        color: inherit !important; 
+    .formSection{
+        border: 1px solid $salmonPink;
+        border-radius: 4px;
+        padding: 30px;
+        width: 60%;
+        margin: 0 auto;
+        background-color: rgba(49, 48, 48, 0.673);
     }
-}
 
-.row {
-    margin: 0px !important;
-}
-
-button {
-    outline: none !important;
-
-    &:focus, :hover {
-        outline: none !important;
+    .requiredStar {
+        color: $errorRed;
     }
-}
-
-.primaryBtn {
-    width: 180px;
-    height: 40px;
-    border: 2px solid $salmonPink;
-    background-color: $black;
-    color: white  !important;
-    border-radius: 4px;
-
-    &:hover, :focus {
-        border: 2px solid $black;
-        background-color: $salmonPink;
-        color: white !important;
-    }
-}
-
-.highlightTxt {
-    color: $salmonPink;
-    font-weight: 600;
-}
-
-// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ SCROLLBAR @@@@@@@@@@@@@@@@@@@@@@@@
-/* width */
-::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: $black; 
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: $salmonPink; 
-    border-radius: 4px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: $black; 
 }
